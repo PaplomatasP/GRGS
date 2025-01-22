@@ -127,33 +127,4 @@ print(results$ga_genes)
 str(results$results[[1]])  # First generation results
 ```
 
-```r
-# Load built-in datasets
-data("thca_gse_154763")
-data("thca_gse_154763_Labels")
-data("lr_data")
 
-thca_gse_154763 <- as.data.frame(thca_gse_154763)
-thca_gse_154763_Labels <- as.factor(thca_gse_154763_Labels)
-lr_data <- as.data.frame(lr_data)
-
-# Run genetic algorithm
-results <- GRGS(
-  data = thca_gse_154763,
-  labels = thca_gse_154763_Labels,
-  lr_data = lr_data,
-  pop_size = 100,
-  generations = 500,
-  mutation_rate = 0.03,
-  variance_threshold = 0.8,
-  early_stop_limit = 30,
-  dynamic_mutation = TRUE
-)
-
-# View best genes
-print(results$ga_genes)
-
-# Access full results
-str(results$results[[1]])  # First generation results
-
-```
