@@ -67,6 +67,13 @@ A list containing:
 
 #### Examples
 ```r
+
+# αν δεν έχεις το devtools
+install.packages("devtools")
+
+# εγκατάσταση από GitHub
+devtools::install_github("PaplomatasP/GRGS")
+
 # Load built-in datasets
 data("thca_gse_154763")
 data("thca_gse_154763_Labels")
