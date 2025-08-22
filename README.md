@@ -68,10 +68,10 @@ A list containing:
 #### Examples
 ```r
 
-# αν δεν έχεις το devtools
+# install  devtools
 install.packages("devtools")
 
-# εγκατάσταση από GitHub
+# Install GRGS  GitHub
 devtools::install_github("PaplomatasP/GRGS")
 
 # Load built-in datasets
